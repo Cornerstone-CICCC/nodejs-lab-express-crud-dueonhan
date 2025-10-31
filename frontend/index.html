@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee Management</title>
+  </head>
+  <body>
+    <h1>Employees</h1>
+
+    <!-- Add Employee Form -->
+    <section id="add-employee">
+      <h2>Add Employee</h2>
+      <form id="addForm">
+        <input type="text" id="firstname" placeholder="First Name" required />
+        <input type="text" id="lastname" placeholder="Last Name" required />
+        <input type="number" id="age" placeholder="Age" required />
+        <label>
+          Married:
+          <input type="checkbox" id="isMarried" />
+        </label>
+        <button type="submit">Add Employee</button>
+      </form>
+    </section>
+
+    <!-- Edit Employee Form -->
+    <section id="edit-employee">
+      <h2>Edit Employee</h2>
+      <form id="editForm">
+        <input type="hidden" id="editId" />
+        <input
+          type="text"
+          id="editFirstname"
+          placeholder="First Name"
+          required
+        />
+        <input type="text" id="editLastname" placeholder="Last Name" required />
+        <input type="number" id="editAge" placeholder="Age" required />
+        <label>
+          Married:
+          <input type="checkbox" id="editIsMarried" />
+        </label>
+        <button type="submit">Update Employee</button>
+      </form>
+    </section>
+
+    <!-- Employee List -->
+    <section id="employee-list">
+      <h2>Employee List</h2>
+      <ul id="employees"></ul>
+    </section>
+
+    <!-- Search -->
+    <section id="search">
+      <input
+        type="text"
+        id="searchKeyword"
+        placeholder="Search by first name"
+      />
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
